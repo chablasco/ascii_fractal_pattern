@@ -60,6 +60,17 @@ function draw() {
 
   t += 0.08;
 }
+
+  function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  cols = floor(width / charWidth);
+  rows = floor(height / charHeight);
+}
+  
+function mousePressed() {
+  fullscreen(!fullscreen());
+}
+  
 </script>
 </body>
 </html>
